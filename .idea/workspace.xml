@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be63e96f-a2ba-4731-a5ac-756ad8b3eacd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/ServerManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/config/LoadDevDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/model/HardwareReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/repo/HardwareReadingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/rest/ServerManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/service/TakeHardwareReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/service/TakeHardwareReadingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="be63e96f-a2ba-4731-a5ac-756ad8b3eacd" name="Changes" comment="Split">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/ServerManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/ServerManagementAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/config/LoadDevDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/model/HardwareReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/model/HardwareReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/service/TakeHardwareReadingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/service/TakeHardwareReadingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +21,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2ivq2EA4fFkrCBcp7rqMfSsehu9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,9 +32,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "Spring Boot.ServerManagementAnalyser.executor": "Run",
+    "Spring Boot.ServerManagementApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/meswa/OneDrive/Documents/Uni_Temp/Third_Year/Software Engineering/ServerManagementAnalyser/ServerManagementAnalyser/src/main/resources",
@@ -67,9 +62,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ServerManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="ServerManagementAnalyser" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ServerManagementAnalyser" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="uk.ac.hope.mcse.segh.servermanagement.ServerManagementApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uk.ac.hope.mcse.segh.servermanagement.ServerManagementAnalyser" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720381189308</updated>
       <workItem from="1720381190340" duration="386000" />
+      <workItem from="1720381812205" duration="1823000" />
     </task>
     <servers />
   </component>

@@ -30,7 +30,7 @@ public class TakeHardwareReadingServiceImpl implements TakeHardwareReadingServic
         //Get processor details
         CentralProcessor processor = hal.getProcessor();
         //Get the current CPU usage. Works by taking a sample of CPU tick counters, waits one second, takes another and works out the difference to find the current whole CPU usage. Then multiplies by 100 to get a more human-readable number
-        double currentCpuUsage = (double) (processor.getSystemCpuLoad(1000) * 100);
+        double currentCpuUsage = (processor.getSystemCpuLoad(1000) * 100);
         //Rounds the reading to two decimal places
         currentCpuUsage = Math.round(currentCpuUsage * 100);
         currentCpuUsage = currentCpuUsage/100;
@@ -40,22 +40,23 @@ public class TakeHardwareReadingServiceImpl implements TakeHardwareReadingServic
         //As the value provided by getMemory is of type GlobalMemory and the value provided is in the format "Available: 15.5 GiB/31.9 GiB", the following converts it to the format "15.5" and into a double
         int start = currentUnconvertedRamUsage.toString().indexOf(" ");
         int end = currentUnconvertedRamUsage.toString().indexOf("G");
-        double currentConvertedRamUsage = Double.parseDouble(currentUnconvertedRamUsage.toString().substring(start + 1, end - 1));
+        String currentConvertedRamUsage = currentUnconvertedRamUsage.toString().substring(start + 1, end - 1);
 
         //Gets the current date and time
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));
+
 
         //Print values to console for debugging purposes
-        System.out.println(currentCpuUsage);
-        System.out.println(currentUnconvertedRamUsage);
-        System.out.println(currentConvertedRamUsage);
+        //System.out.println(dtf.format(now));
+        //System.out.println(currentCpuUsage);
+        //System.out.println(currentUnconvertedRamUsage);
+        //System.out.println(currentConvertedRamUsage);
 
         //Save all the read values into the MongoDB database
         HardwareReading HardwareReading = new HardwareReading();
         HardwareReading.setDateTime(dtf.format(now));
-        HardwareReading.setCpu(currentCpuUsage);
+        HardwareReading.setCpu(String.valueOf(currentCpuUsage));
         HardwareReading.setRam(currentConvertedRamUsage);
         repository.save(HardwareReading);
     }
