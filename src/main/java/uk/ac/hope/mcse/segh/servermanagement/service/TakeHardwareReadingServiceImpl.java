@@ -42,6 +42,13 @@ public class TakeHardwareReadingServiceImpl implements TakeHardwareReadingServic
         int end = currentUnconvertedRamUsage.toString().indexOf("G");
         String currentConvertedRamUsage = currentUnconvertedRamUsage.toString().substring(start + 1, end - 1);
 
+        //Creates a variable that holds the total amount of memory
+        int totalStart = currentUnconvertedRamUsage.toString().indexOf("/");
+        //Cannot find an easy way to find the 3rd space of a string, so simply extracting the beginning and then extracting just the value when there is only one space left
+        String extractedRamUsage = currentUnconvertedRamUsage.toString().substring(totalStart + 1);
+        int totalEnd = extractedRamUsage.indexOf(" ");
+        String totalRam = extractedRamUsage.substring(0, totalEnd);
+
         //Gets the current date and time
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
@@ -58,6 +65,7 @@ public class TakeHardwareReadingServiceImpl implements TakeHardwareReadingServic
         HardwareReading.setDateTime(dtf.format(now));
         HardwareReading.setCpu(String.valueOf(currentCpuUsage));
         HardwareReading.setRam(currentConvertedRamUsage);
+        HardwareReading.setRamTotal(totalRam);
         repository.save(HardwareReading);
     }
 }

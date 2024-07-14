@@ -18,6 +18,8 @@ public class HardwareReading {
 
     private String ram;
 
+    private String ramTotal;
+
     public void set_id(BigInteger _id) {
         this._id = _id;
     }
@@ -32,6 +34,10 @@ public class HardwareReading {
 
     public void setRam(String ram) {
         this.ram = ram;
+    }
+
+    public void setRamTotal(String ramTotal) {
+        this.ramTotal = ramTotal;
     }
 
 }
