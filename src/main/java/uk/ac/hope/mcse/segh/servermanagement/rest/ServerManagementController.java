@@ -15,8 +15,6 @@ import java.util.List;
 
 @RestController
 class ServerManagementController {
-
-    private HardwareReadingRepository repository;
     private final TakeHardwareReadingService takeHardwareReadingService;
 
 

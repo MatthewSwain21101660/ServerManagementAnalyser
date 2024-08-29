@@ -9,7 +9,6 @@ import java.math.BigInteger;
 public class HardwareReading {
 
     @Id
-
     private BigInteger _id;
 
     private String dateTime;
@@ -19,10 +18,6 @@ public class HardwareReading {
     private String ram;
 
     private String ramTotal;
-
-    public void set_id(BigInteger _id) {
-        this._id = _id;
-    }
 
     public void setDateTime(String dateTime) {
         this.dateTime = dateTime;

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be63e96f-a2ba-4731-a5ac-756ad8b3eacd" name="Changes" comment="Updated ports">
-      <change afterPath="$PROJECT_DIR$/src/test/java/uk/ac/hope/mcse/segh/servermanagement/service/ServerManagementAnalyserApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uk/ac/hope/mcse/segh/servermanagement/service/TakeHardwareReadingServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/model/HardwareReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/model/HardwareReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/rest/ServerManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/hope/mcse/segh/servermanagement/rest/ServerManagementController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -40,6 +43,7 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ServerManagementAnalyser.executor": "Run",
@@ -49,7 +53,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/meswa/OneDrive/Documents/Uni_Temp/Third_Year/Software Engineering/ServerManagementAnalyser/ServerManagementAnalyser/src/main/resources",
+    "last_opened_file_path": "C:/Users/meswa/OneDrive/Documents/Uni_Temp/Third_Year/Software Engineering/ServerManagementAnalyser",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -111,6 +116,16 @@
       <workItem from="1724164235100" duration="2417000" />
       <workItem from="1724245394057" duration="618000" />
       <workItem from="1724266453080" duration="3070000" />
+      <workItem from="1724506591453" duration="1342000" />
+      <workItem from="1724528304359" duration="461000" />
+      <workItem from="1724528775930" duration="66000" />
+      <workItem from="1724528850102" duration="2652000" />
+      <workItem from="1724532641355" duration="301000" />
+      <workItem from="1724599549957" duration="2430000" />
+      <workItem from="1724864230835" duration="11000" />
+      <workItem from="1724865086029" duration="796000" />
+      <workItem from="1724876823581" duration="8000" />
+      <workItem from="1724959218844" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="Updated ports">
       <option name="closed" value="true" />
@@ -137,5 +152,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated ports" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated ports" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
